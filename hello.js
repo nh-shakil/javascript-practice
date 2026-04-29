@@ -49,7 +49,7 @@ if (number % 2 === 0){
 else {
     console.log(`${number} is odd number `)
 }
-    */
+    
 
 let x =10;
 x++; //inctrement
@@ -61,6 +61,55 @@ y = y -1;
 y--; //decrement
 
 console.log(`decremented ${y}`);
+
+*/
+
+
+
+
+//Comparison Operators
+  let p ='5';
+  let q = 5;
+
+  console.log(p == q);
+  console.log(p === q);
+  console.log(p !== q);
+  console.log(p > q);
+  console.log(p < q);
+  console.log(p >= q);
+  console.log(p <= q);
+
+  //Logical Operators
+
+  /*
+  * && AND Operator
+  * || OR Operator 
+  *  ! NOT Operator
+  */
+
+  //Assigment Operators 
+
+let j = 10;
+let k = 20;
+j = j + k;
+j-=k;
+
+j = j /k;
+j /= k;
+j %= k;
+ j **= k;
+
+console.log(j);
+
+//Conditionals Ternary Operator
+
+let t = a < b ? 'true' : 'false';
+console.log(t);
+
+//Typeof Operator 
+
+let firstName = 'shakil';
+
 
 
 
