@@ -14,7 +14,7 @@ console.log(Name);
 const ShakilName = 'NH Shakil';
 
 console.log(ShakilName);
-
+ 
 const person = {
     fristName: 'Shakil',
     age: '24',
@@ -109,6 +109,58 @@ console.log(t);
 //Typeof Operator 
 
 let firstName = 'shakil';
+
+
+let cvInfo = {
+    name: 'Nazmul Huda Shakil',
+    age: 20,
+    address:'Chandpur, Bangladesh',
+    university: 'Universitiy of South Asia',
+    Skills: 'html,css,javascipt,laravel,php ',
+}
+
+console.log(cvInfo);
+
+const info = {
+    names: 'huda',
+    age:24,
+}
+
+info.names = 'huda Shakil';
+console.log(info);
+
+//data type 
+
+let MyfirstName = "NH Shakil";
+let Myage = 30;
+console.log(typeof Myage);
+
+
+let numberBing = 9000000000000;
+let numberBig = 90000000000000;
+let culculate = numberBing * numberBig;
+
+
+console.log(culculate);
+console.log(typeof culculate);
+
+
+let isAudlt = false;
+const somInfo = null;
+
+
+console.log(typeof isAudlt);
+console.log(typeof somInfo);
+
+
+let broName = ['Milon','Rasal','Shakil'];
+
+
+
+console.log(broName);
+console.log(typeof broName);
+
+
 
 
 
