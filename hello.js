@@ -192,10 +192,10 @@ function isSubscribe (){
 }
  document.getElementById('subscribe-btn').addEventListener('click',isSubscribe);
  
- (function (massage){
-console.log('i am self-Invokeing Functions',massage);
+//  (function (massage){
+// console.log('i am self-Invokeing Functions',massage);
 
- })("hello");
+//  })("hello");
 
  let maths = function(x,y){
     return x * y;
@@ -223,13 +223,82 @@ console.log(add(3,4));
 
 //greet functions
 
-function greet(firstName){
-    function sayHello(){
-        alert('hello ' + firstName);
-    }
-    return sayHello();
-}
-greet('Shakil')
+// function greet(firstName){
+//     function sayHello(){
+//         alert('hello ' + firstName);
+//     }
+//     return sayHello();
+// }
+// greet('Shakil')
+
+
+
+
+//Objects 
+
+const mobileModel = {
+    brand : 'Samsung',
+    model : 'Samsung S 24',
+    price: 500000,
+    color : "black",
+    ram : '12gb',
+    storage : '512gb',
+    display: 6.5,
+    camera: ['200MP,20MP,10MP'],
+
+    BrandModel : function(){
+        return `this is ${this.brand} and the price is ${this.model}`;
+    },
+
+    battry : {
+        capacity : '6000mh',
+        fastchanging : true,
+    },
+};
+
+
+mobileModel.model = 's24 ultra';
+
+console.log(mobileModel);
+console.log(mobileModel.battry);
+console.log(mobileModel.BrandModel);
+
+// multiple objects one variable 
+
+const Obj1 = {
+    a: 10,
+    b: 20,
+    c: 30,
+
+};
+
+
+const Obj2 = {
+    e: 40,
+    f: 50,
+    g: 60,
+};
+
+
+const Obj3 = {
+  i: 70,
+  j:80,
+  k: 90,
+};
+
+const finalObj = { ...Obj1, ...Obj2, ...Obj3 };
+console.log(finalObj);
+
+// object constructor 
+
+function mobile (brand,model,price,color,ram,storage,display,camera){
+    this.brand = brand;
+    this.model = model;
+};
+
+const mobile1 = new mobile('samsung','s24 ultra',50000,'black','12gb','512gb',6.5,['200MP,20MP,10MP']);
+mobile1.price = 700000,
+console.log(mobile1);
 
 
 
