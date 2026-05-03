@@ -174,10 +174,62 @@ console.log(typeof broName);
   =5
 */
 
-console.log(5 + 6 - 3 / 2 * 4); //  ans 5 
+console.log(5 + 6 - 3 / 2 * 4); //  ans 5
 
 
 
+// functions
+function newUser (fullName, age, DateofBirth = 2003 ) {
+console.log('hello ' + fullName + ' i am ' + age + ' and my date of birth is ' + DateofBirth);
+}
+
+newUser ('NH',24,);
+newUser ('Shakil',24,true); 
+
+
+function isSubscribe (){
+    console.log('Subscribed')
+}
+ document.getElementById('subscribe-btn').addEventListener('click',isSubscribe);
+ 
+ (function (massage){
+console.log('i am self-Invokeing Functions',massage);
+
+ })("hello");
+
+ let maths = function(x,y){
+    return x * y;
+ };
+
+console.log(maths(3,4));
+console.log(maths(4,4));
+console.log(maths(4,5));
+
+let numbers = [4,5,6,7];
+let sqNumbers = numbers.map(function(number){
+    return number * number;
+});
+console.log(sqNumbers);
+
+
+function isTest(){
+    console.log('Test successfully');
+}
+document.getElementById('test-btn').addEventListener('click',isTest);
+
+// arrow functions
+let add = (x,y) => x + y;
+console.log(add(3,4));
+
+//greet functions
+
+function greet(firstName){
+    function sayHello(){
+        alert('hello ' + firstName);
+    }
+    return sayHello();
+}
+greet('Shakil')
 
 
 
